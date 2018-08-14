@@ -40,7 +40,7 @@ class App < Sinatra::Base
       return "#{@a - @b}"
     elsif @s == "multiply"
       return "#{@a * @b}"
-    elsif @s == "devide"
+    elsif @s == "divide"
       return "#{@a % @b}"
 
     end
