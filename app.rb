@@ -16,7 +16,7 @@ class App < Sinatra::Base
     @rep_phrase = params[:phrase]
     @rep_number = params[:number].to_i
     @rep_number.times do
-      return "#{@rep_phrase}"
+      puts "#{@rep_phrase}"
     end
   end
 
