@@ -40,16 +40,8 @@ class App < Sinatra::Base
     elsif @s == "multiply"
       return @a * @b
     elsif @s == "devide"
-      return @a % @b 
+      return @a % @b
 
-      end
-
-      else
-
-      end
-
-      end
-    @d =
-    "#{}"
+    end
   end
 end
