@@ -36,6 +36,13 @@ class App < Sinatra::Base
       return @a + @b
 
     elsif @s == "subtract"
+      return @a - @b
+    elsif @s == "multiply"
+      return @a * @b
+    elsif @s == "devide"
+      return @a % @b 
+
+      end
 
       else
 
