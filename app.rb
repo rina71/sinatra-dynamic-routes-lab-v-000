@@ -13,11 +13,11 @@ class App < Sinatra::Base
   end
 
   get "say/:number/:phrase" do
-    @rep_phrase = params[:phrase]
-    @rep_number = params[:number].to_i
-    @rep_number.times do
-      puts "#{@rep_phrase}"
+    final_string = ""
+    params[:number].to_i.times do
+      final_string += "#{params[:phrase]}\n"
     end
+    final_string
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
@@ -41,7 +41,7 @@ class App < Sinatra::Base
     elsif @s == "multiply"
       return "#{@a * @b}"
     elsif @s == "divide"
-      return "#{@a / @b}" 
+      return "#{@a / @b}"
 
     end
   end
