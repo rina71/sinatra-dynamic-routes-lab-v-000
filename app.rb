@@ -16,7 +16,7 @@ class App < Sinatra::Base
     @rep_phrase = params[:phrase]
     @rep_number = params[:number].to_i
     @rep_number.times{return "#{@rep_phrase}"}
-    
+
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
@@ -25,13 +25,23 @@ class App < Sinatra::Base
     @w3 = params[:word3]
     @w4 = params[:word4]
     @w5 = params[:word5]
-    @new = "#{@w1 + @w2 + @w3 + @w4 + @w5}"
+    return "#{@w1 + @w2 + @w3 + @w4 + @w5}"
   end
 
   get '/:operation/:number1/:number2' do
     @s = params[:operation]
     @a = params[:number1].to_i
     @b = params[:number2].to_i
+    if @s == "add"
+      return @a + @b
+
+    elsif @s == "subtract"
+
+      else
+
+      end
+
+      end
     @d =
     "#{}"
   end
